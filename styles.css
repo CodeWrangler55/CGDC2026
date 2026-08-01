@@ -67,15 +67,20 @@ a {
 
 .brand-mark {
   display: grid;
-  width: 38px;
-  height: 38px;
+  width: 116px;
+  height: 42px;
   flex: 0 0 auto;
   place-items: center;
   border: 3px solid var(--gold);
   border-radius: 8px;
-  background: var(--navy-strong);
-  color: white;
+  background: var(--cream);
   box-shadow: 4px 4px 0 var(--coral);
+}
+
+.brand-mark img {
+  display: block;
+  width: 92px;
+  height: auto;
 }
 
 .nav {
@@ -389,6 +394,15 @@ input[type="checkbox"] {
 @media (max-width: 560px) {
   .brand {
     font-size: 0.92rem;
+  }
+
+  .brand-mark {
+    width: 104px;
+    height: 40px;
+  }
+
+  .brand-mark img {
+    width: 82px;
   }
 
   .nav {
