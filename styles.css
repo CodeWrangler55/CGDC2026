@@ -1,19 +1,18 @@
 :root {
   color-scheme: light;
-  --ink: #111827;
-  --navy: #15294b;
-  --navy-strong: #0b1730;
-  --blue: #196cb7;
-  --sky: #8ed4ee;
-  --coral: #f05a43;
-  --orange: #f68c2f;
-  --gold: #ffd15c;
-  --teal: #2fb89d;
-  --cream: #fff4df;
-  --paper: #fffaf1;
+  --ink: #24130d;
+  --navy: #5a2415;
+  --navy-strong: #2a120c;
+  --coral: #e7472e;
+  --orange: #f58220;
+  --orange-deep: #b83320;
+  --gold: #ffc857;
+  --teal: #3f8f73;
+  --cream: #fff0d2;
+  --paper: #fff8eb;
   --panel: #ffffff;
-  --muted: #5d6473;
-  --line: #ead7bd;
+  --muted: #675247;
+  --line: #efc899;
 }
 
 * {
@@ -27,8 +26,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 8% 6%, rgba(246, 140, 47, 0.18), transparent 24rem),
-    radial-gradient(circle at 96% 18%, rgba(25, 108, 183, 0.14), transparent 28rem),
+    radial-gradient(circle at 8% 6%, rgba(245, 130, 32, 0.22), transparent 24rem),
+    radial-gradient(circle at 96% 18%, rgba(231, 71, 46, 0.16), transparent 28rem),
     var(--paper);
   color: var(--ink);
   font-family:
@@ -50,10 +49,10 @@ a {
   justify-content: space-between;
   gap: 18px;
   padding: 14px clamp(18px, 4vw, 58px);
-  border-bottom: 4px solid var(--coral);
-  background: rgba(11, 23, 48, 0.96);
+  border-bottom: 4px solid var(--gold);
+  background: linear-gradient(90deg, var(--orange-deep), var(--orange));
   color: white;
-  box-shadow: 0 14px 28px rgba(11, 23, 48, 0.2);
+  box-shadow: 0 14px 28px rgba(42, 18, 12, 0.24);
 }
 
 .brand,
@@ -77,9 +76,9 @@ a {
   place-items: center;
   border: 3px solid var(--gold);
   border-radius: 8px;
-  background: var(--coral);
+  background: var(--navy-strong);
   color: white;
-  box-shadow: 4px 4px 0 var(--blue);
+  box-shadow: 4px 4px 0 var(--coral);
 }
 
 .nav {
@@ -114,7 +113,7 @@ a {
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 4px 4px 0 rgba(11, 23, 48, 0.22);
+  box-shadow: 4px 4px 0 rgba(42, 18, 12, 0.24);
 }
 
 .print-button,
@@ -140,7 +139,7 @@ a {
     clamp(42px, 7vw, 82px);
   border-bottom: 6px solid var(--navy-strong);
   background:
-    linear-gradient(90deg, rgba(11, 23, 48, 0.9), rgba(21, 41, 75, 0.7) 46%, rgba(240, 90, 67, 0.28)),
+    linear-gradient(90deg, rgba(42, 18, 12, 0.88), rgba(184, 51, 32, 0.74) 48%, rgba(245, 130, 32, 0.42)),
     url("https://static1.squarespace.com/static/6887ba50e4fb756e48ebfb4a/t/688ba4a3d340f66a7b4f2a30/1753982115209/social_sharing.jpg?format=1500w")
       center / cover;
   color: white;
@@ -276,7 +275,7 @@ h3 {
   transform: skewX(-18deg);
   border: 2px solid white;
   background: var(--teal);
-  box-shadow: 6px 6px 0 rgba(11, 23, 48, 0.42);
+  box-shadow: 6px 6px 0 rgba(42, 18, 12, 0.42);
 }
 
 .hero-pattern span:nth-child(2) {
@@ -329,15 +328,15 @@ h3 {
   border: 3px solid var(--navy-strong);
   border-radius: 8px;
   background: var(--panel);
-  box-shadow: 7px 7px 0 rgba(25, 108, 183, 0.18);
+  box-shadow: 7px 7px 0 rgba(245, 130, 32, 0.24);
 }
 
 .check-group:nth-child(3n + 2) {
-  box-shadow: 7px 7px 0 rgba(240, 90, 67, 0.18);
+  box-shadow: 7px 7px 0 rgba(231, 71, 46, 0.22);
 }
 
 .check-group:nth-child(3n) {
-  box-shadow: 7px 7px 0 rgba(47, 184, 157, 0.18);
+  box-shadow: 7px 7px 0 rgba(255, 200, 87, 0.34);
 }
 
 .checklist {
@@ -378,8 +377,8 @@ input[type="checkbox"] {
   justify-content: space-between;
   gap: 18px;
   padding: 26px clamp(20px, 6vw, 80px);
-  border-top: 6px solid var(--coral);
-  background: var(--navy-strong);
+  border-top: 6px solid var(--gold);
+  background: linear-gradient(90deg, var(--orange-deep), var(--orange));
   color: white;
 }
 
