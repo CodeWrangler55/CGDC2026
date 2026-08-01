@@ -1,0 +1,12 @@
+version: "3"
+
+includes:
+  deft:
+    taskfile: ./.deft/core/Taskfile.yml
+    optional: true
+
+tasks:
+  default:
+    desc: List local tasks
+    cmds:
+      - task --list

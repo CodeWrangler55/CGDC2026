@@ -1,0 +1,27 @@
+{
+  "vBRIEFInfo": {
+    "version": "0.6",
+    "description": "Project definition -- synthesized gestalt of the project.",
+    "updated": "2026-08-01T10:40:00-04:00"
+  },
+  "plan": {
+    "title": "PROJECT-DEFINITION",
+    "status": "running",
+    "narratives": {
+      "Overview": "CGDC2026 is a static micro website hosted from GitHub Pages.",
+      "Architecture": "A single-repository static website. GitHub Actions publishes the repository root to GitHub Pages using the official Pages deployment actions.",
+      "ProjectConfig": "Tech stack: HTML, CSS, and vanilla JavaScript. Deployment: GitHub Pages via GitHub Actions. Workflow: edit static files, commit to main, push, and let the Pages workflow deploy.",
+      "Strategy": "Use interview for future scoped changes unless the user asks for a direct implementation.",
+      "tech stack": "HTML, CSS, vanilla JavaScript, GitHub Actions, GitHub Pages."
+    },
+    "items": [],
+    "policy": {
+      "allowDirectCommitsToMaster": true,
+      "wipCap": 10,
+      "triageScope": [],
+      "triageScopeIgnores": [],
+      "triageRankingLabels": [],
+      "triageAutoClassify": []
+    }
+  }
+}
