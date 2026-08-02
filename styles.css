@@ -264,7 +264,7 @@ h3 {
   gap: clamp(30px, 6vw, 78px);
   padding: clamp(56px, 8vw, 98px) clamp(20px, 6vw, 80px);
   background:
-    linear-gradient(rgba(255, 248, 235, 0.9), rgba(255, 248, 235, 0.94)),
+    linear-gradient(rgba(255, 248, 235, 0.76), rgba(255, 248, 235, 0.82)),
     url("./assets/demo-room-background.jpg") center / cover,
     var(--paper);
 }
@@ -272,6 +272,8 @@ h3 {
 .section.accent {
   border-block: 6px solid var(--navy-strong);
   background:
+    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.88)),
+    url("./assets/demo-room-background.jpg") center / cover,
     linear-gradient(135deg, rgba(255, 209, 92, 0.3), transparent 34%),
     #ffffff;
 }
@@ -482,6 +484,7 @@ input[type="checkbox"] {
 
   .section.accent {
     border-block: 0;
+    background: none;
   }
 
   .section-number {
