@@ -363,6 +363,13 @@ input[type="checkbox"] {
   font-weight: 900;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px 22px;
+}
+
 .site-footer a {
   text-decoration: none;
 }
@@ -421,6 +428,12 @@ input[type="checkbox"] {
   .nav {
     gap: 10px 14px;
     font-size: 0.82rem;
+  }
+
+  .site-footer,
+  .footer-links {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .print-button,
